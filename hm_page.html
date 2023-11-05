@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<style>
+body{
+	background-color: rgb(251, 179, 179);
+	font-family: "微軟正黑體";
+}
+h1{
+	font-size: 120px;
+	text-align: center;
+}
+h2{
+	font-size: 50px;
+	text-align: left;
+}
+p{
+	font-size: 25px;
+	text-align: left;
+    color: rgb(0, 0, 0);
+}
+.buttonstyle {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.buttonstyle:hover {
+  background-color: #45a049; /* Darker shade of green */
+  transform: scale(1.05); /* Slightly increase the scale of the button */
+}
+  </style>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Winnie-the-Pooh</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            // Hide the content initially
+            $(".content").hide();
+
+            // Toggle content on button click
+            $("#toggle").click(function(){
+                $(".content").toggle();
+            });
+        });
+    </script>
+    <div class="container">
+        <header>
+            <h1 style="color: rgb(250, 242, 99); font-weight: bold; text-shadow: 2px 2px 4px #000000;">This is Winnie's world!</h1>
+
+        </header>
+        <section>
+            <img src="https://morisawahk.com/cdn/shop/collections/Pooh.png?v=1662823655" class="profile-image" width="250px" height="250px" style="display:block; margin:auto;">
+            <article>
+                <h2 style="color: rgb(99, 250, 109);font-weight: bold; text-shadow: 2px 2px 4px #000000;">About Pooh</h2>
+                <p>小熊維尼（英語：Winnie-the-Pooh）是由英國作家艾倫·亞歷山大·米恩和插畫家歐內斯特·霍華德·謝培德創作的的擬人化泰迪熊。
+                    這一卡通形象在1925年12月24日首次面世，以聖誕故事形式在倫敦《新聞晚報》刊出；第一本《小熊維尼》故事書於1926年10月出版。
+                    1961年，華特·迪士尼公司從米恩的遺產及其授權代理史蒂芬·斯萊辛格公司那裡獲得了小熊維尼故事的某些著作權，並使用未加連字元的名字「Winnie the Pooh」將這些故事改編成一系列的專題片。
+                    推出後因其可愛的外型與憨厚的個性，迅速成為世界知名的卡通角色之一，這一系列也成為了迪士尼最成功的特許經營專案之一。            
+                    人們為了區別兩種不同風格的維尼，稱呼米爾恩時期由謝培德繪製的維尼為「經典維尼」（Classic Pooh）；
+                    而後全球粉絲便把米爾恩的生日（1月18日）推為國際小熊維尼日。
+                    <a href="https://zh.wikipedia.org/zh-tw/%E5%B0%8F%E7%86%8A%E7%B6%AD%E5%B0%BC" target="_blank">前往維基百科</a>
+                </p>
+                    
+            </article>
+            <article>
+                <h2 style="color: rgb(99, 250, 109);font-weight: bold; text-shadow: 2px 2px 4px #000000;">Friendss</h2>
+                <button class="buttonstyle" id="toggle">Find out what is it!</button>
+            </article>
+            <div class="content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_jdap7Wi-DiCAfCYLHtSZgVRUQ--sD6QxquXLjwS4rwZfef80RTt_278-hp86rIxwJr0&usqp=CAU" alt="Tigger" class="profile-image"><p>Tigger</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYpvxIHNcZ7Iselp5ksZ_yseIk_8Z1Zq5_wUA9-7vkfw&s" alt="Eeyore" class="profile-image"><p>Eeyore</p>
+                <img src="https://static.wikia.nocookie.net/disney/images/5/5d/Profile_-_Piglet.png/revision/latest?cb=20190424074931" alt="Piglet" class="profile-image"><p>Piglet</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
